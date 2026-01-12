@@ -1,6 +1,6 @@
 <header>
   <div>
-    image
+    <img [ngSrc]="logoPath" width="140" height="140" priority>
   </div>
   <div>
     {{ title }}
@@ -8,5 +8,5 @@
 </header>
 
 <footer>
-  <p>© 2026 Carpediem Restaurant. All rights reserved.</p>
+  <p>© 2026 {{ title }}. All rights reserved.</p>
 </footer>
