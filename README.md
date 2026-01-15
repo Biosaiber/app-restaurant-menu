@@ -1,59 +1,110 @@
-# AppRestaurantMenu
+Angular Introduction – Learning Project
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.7.
+This repository contains a learning project created while studying the fundamentals of Angular.
+Its purpose is to practice core Angular concepts, understand project structure, and build confidence working with modern Angular features such as standalone components and template control flow.
 
-## Development server
+📚 What This Project Covers
 
-To start a local development server, run:
+This project is a hands-on recap of the Angular Introduction lesson and focuses on the following topics:
 
-```bash
-ng serve
-```
+🧱 Project Structure
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+The src/ folder contains all source files of the Angular application
 
-## Code scaffolding
+Angular follows a clear and consistent file naming convention:
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+*.component.ts
 
-```bash
-ng generate component component-name
-```
+*.component.html
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+*.component.css
 
-```bash
-ng generate --help
-```
+🧩 Components
 
-## Building
+Components are defined using the @Component decorator
 
-To build the project run:
+Each component includes metadata such as:
 
-```bash
-ng build
-```
+selector
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+standalone
 
-## Running unit tests
+imports
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+template or templateUrl
 
-```bash
-ng test
-```
+styles or styleUrls
 
-## Running end-to-end tests
+The project uses standalone components, without NgModules
 
-For end-to-end (e2e) testing, run:
+🎨 Templates & Rendering
 
-```bash
-ng e2e
-```
+HTML templates combine standard HTML with Angular-specific syntax
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Dynamic content is rendered directly in templates
 
-## Additional Resources
+Control Flow
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Conditional and iterative rendering using modern Angular syntax:
+
+@if
+
+@for
+
+@switch
+
+🔁 Data Binding
+
+Synchronization between component logic and the template
+
+Supported binding types:
+
+Interpolation: {{ value }}
+
+Property binding: [property]="value"
+
+🧠 Component Composition
+
+Components are composed by importing one standalone component into another
+
+Enables building reusable and nested UI structures
+
+📦 Content Projection
+
+Content projection is implemented using <ng-content>
+
+Supported Types
+
+Single-slot projection
+
+Multi-slot projection using select attributes with CSS selectors
+
+🖼️ Image Optimization
+
+Uses Angular’s NgOptimizedImage directive
+
+Improves performance by optimizing image loading
+
+Images are bound dynamically using the ngSrc attribute
+
+🎯 Goal of the Project
+
+The goal of this repository is:
+
+To serve as a learning reference for Angular basics
+
+To demonstrate understanding of Angular core concepts
+
+To act as a foundation for future, more advanced Angular projects
+
+🚀 Tech Stack
+
+Angular (modern, standalone components)
+
+TypeScript
+
+HTML & CSS
+
+📝 Notes
+
+This project is intentionally simple and educational. It prioritizes clarity and learning over visual complexity or production-level architecture.
